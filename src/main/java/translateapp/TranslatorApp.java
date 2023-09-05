@@ -45,7 +45,7 @@ public class TranslatorApp {
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             
         	while ((line = br.readLine()) != null) {
-        		//kelimleri ; karakterine gore ayirma ve listeye alma
+        	    //kelimleri ; karakterine gore ayirma ve listeye alma
                 String[] words = line.split(delimiter);
                 List<String> kelimeler = new ArrayList<>(Arrays.asList(words));
                 
